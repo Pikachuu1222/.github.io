@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Professional Experience</a></li>
+            <li><a href="#portfolio">Portfolios</a></li>
+            <li><a href="#cv">CV</a></li>
+        </ul>
+    </nav>
+
+    <!-- 首页 -->
+    <section id="home">
+        <div class="home-container">
+            <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
+            <h1>Your Name</h1>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: +123 456 7890</p>
+
+            <!-- 软件技能（使用图标） -->
+            <div class="skills">
+                <h2>Software Skills</h2>
+                <ul>
+                    <li><img src="html-icon.png" alt="HTML">HTML</li>
+                    <li><img src="css-icon.png" alt="CSS">CSS</li>
+                    <li><img src="js-icon.png" alt="JavaScript">JavaScript</li>
+                    <!-- 添加更多技能图标 -->
+                </ul>
+            </div>
+
+            <!-- Biography -->
+            <h2>Biography</h2>
+            <p>Write a short biography about yourself here...</p>
+
+            <!-- Education -->
+            <h2>Education</h2>
+            <p>Degree, University, Year</p>
+
+            <!-- Interests -->
+            <h2>Interests</h2>
+            <p>List your interests here...</p>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+            <!-- 工作经历1 -->
+            <div class="timeline-item">
+                <h3>Job Title 1</h3>
+                <p>Company Name - Date</p>
+                <p>Description of your responsibilities and achievements...</p>
+            </div>
+            <!-- 工作经历2 -->
+            <div class="timeline-item">
+                <h3>Job Title 2</h3>
+                <p>Company Name - Date</p>
+                <p>Description of your responsibilities and achievements...</p>
+            </div>
+            <!-- 继续添加更多经历 -->
+        </div>
+    </section>
+
+    <!-- Portfolios -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="project1-cover.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Short description of the project...</p>
+                <a href="project1-details.html">View Details</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2-cover.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Short description of the project...</p>
+                <a href="project2-details.html">View Details</a>
+            </div>
+            <!-- 继续添加更多作品 -->
+        </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+        <h2>Download CV</h2>
+        <a href="your-cv.pdf" download>Click here to download my CV</a>
+    </section>
+</body>
+</html>
+/* 基础样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* 首页 */
+.home-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.skills ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Professional Experience */
+.timeline {
+    padding: 50px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    border-left: 2px solid #333;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 10px;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* Portfolio */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* CV 下载按钮 */
+#cv {
+    padding: 50px;
+    text-align: center;
+}
+
+#cv a {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#experience">Professional Experience</a></li>
+            <li><a href="#portfolio">Portfolios</a></li>
+            <li><a href="#cv">CV</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>Project Title 1</h1>
+        <p>Details about the project...</p>
+    </section>
+</body>
+</html>
